@@ -116,7 +116,7 @@
                   id="screen-select"
                 >
                   <div class="flex justify-center items-center h-full">
-                    <span class="panel">Selecciona un producto...</span>
+                    <span id="panel" class="panel">Selecciona un producto...</span>
                   </div>
                 </div>
                 <!-- Botones -->
@@ -157,11 +157,14 @@
 
           <!-- Coins -->
           <div class="grid place-items-center">
+            <button id="insertCoin">
             <div
-              class="loader border-r-2 rounded-full border-yellow-500 bg-yellow-300 animate-bounce aspect-square w-8 flex justify-center items-center text-yellow-700"
+              
+              class="cursor-pointer loader border-r-2 rounded-full border-yellow-500 bg-yellow-300 animate-bounce aspect-square w-8 flex justify-center items-center text-yellow-700"
             >
               $
             </div>
+          </button>
             <p id="coins"></p>
           </div>
         </div>
