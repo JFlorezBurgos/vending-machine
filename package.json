@@ -1,0 +1,24 @@
+{
+  "name": "vending-machine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "machine.js",
+  "devDependencies": {
+    "vite": "^6.2.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JFlorezBurgos/vending-machine.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JFlorezBurgos/vending-machine/issues"
+  },
+  "homepage": "https://github.com/JFlorezBurgos/vending-machine#readme"
+}
