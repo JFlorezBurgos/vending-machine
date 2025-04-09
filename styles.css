@@ -117,14 +117,21 @@ body{
   transition: all 0.3s;
 }
 
-.button-select:active {
+.button-buy {
+  color: #090909;
+  background: #28d144ad;
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+}
+
+.button-select:active, 
+.button-buy:active {
   color: #666;
   box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
 }
 
 .panel{
-  font-family: "Courier New", monospace;
-  font-size: 0.5rem;
+  font-size: .9rem;
   font-weight: bold;
 }
 
