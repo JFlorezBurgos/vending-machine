@@ -10,4 +10,22 @@ body{
 background: linear-gradient(124deg, rgba(22, 98, 128, 1) 0%, rgba(58, 115, 139, 1) 47%, rgba(50, 116, 138, 1) 46%, rgba(45, 102, 126, 1) 47%);
 }
 
+.products-img{
+  display: flex;
+  justify-content: center;
+  filter: drop-shadow(10px 4px 1px rgba(9, 50, 68, 0.445));
+}
 
+.products-img img{
+  display: flex;
+  justify-content: center;
+  height: 70%;
+
+}
+
+.coin-img {
+  content: url("./assets/img/coin.svg");
+  position: sticky;
+  width: 40px;
+  height: 40px;
+}
