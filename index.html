@@ -9,170 +9,60 @@
   </head>
   <body>
     <div
-      class="flex flex-col justify-centers items-center w-screen h-screen mb-2"
+      class="flex items-center flex-col mb-2"
     >
       <!-- Titulo -->
       <div class="py-5">
-        <button class="button-title" data-text="Awesome">
-          <span class="actual-text">&nbsp;Vending&nbsp;Machine&nbsp;</span>
-          <span aria-hidden="true" class="hover-text"
-            >&nbsp;Vending&nbsp;Machine&nbsp;</span
-          >
-        </button>
+        <h1 class="not-italic text-4xl font-semibold">VENDING MACHINE</h1>
       </div>
       <!-- maquina -->
       <div
-        class="box-content size-150 border-1 p-10 grid grid-row-2 gap-4 rounded-xl"
-        id="vending-machine"
+      class="relative drop-shadow-xl w-170 h-190 overflow-hidden rounded-xl  bg-[#DDF4F9]"
       >
-        <div class="grid grid-cols-3 gap-4">
-          <!-- container productos -->
-          <div class="col-span-2 row-span-3">
-            <div class="box-content border-2 h-full rounded-xl bg-slate-300">
-              <div class="grid grid-cols-4 gap-4 place-items-center" id="products">
-                <div class="place-items-center grid">
-                  <img src="assets/img/snack.png" alt="" />
-                  <span>100$</span>
-                </div>
-                <div class="place-items-center grid">
-                  <img src="assets/img/snack.png" alt="" />
-                  <span>100$</span>
-                </div>
-                <div class="place-items-center grid">
-                  <img src="assets/img/snack.png" alt="" />
-                  <span>100$</span>
-                </div>
-                <div class="place-items-center grid">
-                  <img src="assets/img/snack.png" alt="" />
-                  <span>100$</span>
-                </div>
-                <div class="place-items-center grid">
-                  <img src="assets/img/snack.png" alt="" />
-                  <span>100$</span>
-                </div>
-                <div class="place-items-center grid">
-                  <img src="assets/img/snack.png" alt="" />
-                  <span>100$</span>
-                </div>
-                <div class="place-items-center grid">
-                  <img src="assets/img/snack.png" alt="" />
-                  <span>100$</span>
-                </div>
-                <div class="place-items-center grid">
-                  <img src="assets/img/snack.png" alt="" />
-                  <span>100$</span>
-                </div>
-                <div class="place-items-center grid">
-                  <img src="assets/img/snack.png" alt="" />
-                  <span>100$</span>
-                </div>
-                <div class="place-items-center grid">
-                  <img src="assets/img/snack.png" alt="" />
-                  <span>100$</span>
-                </div>
-                <div class="place-items-center grid">
-                  <img src="assets/img/snack.png" alt="" />
-                  <span>100$</span>
-                </div>
-                <div class="place-items-center grid">
-                  <img src="assets/img/snack.png" alt="" />
-                  <span>100$</span>
-                </div>
-                <div class="place-items-center grid">
-                  <img src="assets/img/cocacola.png" alt="" />
-                  <span>100$</span>
-                </div>
-                <div class="place-items-center grid">
-                  <img src="assets/img/cocacola.png" alt="" />
-                  <span>100$</span>
-                </div>
-                <div class="place-items-center grid">
-                  <img src="assets/img/cocacola.png" alt="" />
-                  <span>100$</span>
-                </div>
-                <div class="place-items-center grid">
-                  <img src="assets/img/cocacola.png" alt="" />
-                  <span>100$</span>
-                </div>
-                
-              </div>
-            </div>
+      <div
+        class="absolute grid grid-cols-6 grid-rows-11 p-6 gap-4 text-white z-[1] m-3 opacity-90 rounded-xl inset-0.5 bg-[#C8ECF4]"
+      >
+
+       <!-- Container productos -->
+        <div class="card col-span-4 col-start-1 row-span-9 row-end-10">
+          productos
+        </div>
+        <!-- PUSH -->
+        <div class=" col-span-4 col-start-1 row-span-2 relative drop-shadow-xl overflow-hidden rounded-xl border border-[#AADDEA] bg-[#B4E2EE]">
+          <div
+        class="absolute flex justify-center items-center gap-4 text-white z-[1] m-3 opacity-90 rounded-xl inset-0.5 border border-[#AADDEA] bg-[#F6F8F9]"
+          >
+          <p class="text-[#22576A] font-bold text-2xl">PICK UP HERE</p>
           </div>
-          <!-- container logo -->
-          <div class="col-start-3 row-end-2">
-            <div class="">
-              <img class="h-full" src="/assets/img/logo.png" alt="" />
-            </div>
-          </div>
-          <!-- container seleccionar -->
-          <div class="col-start-3 row-end-3">
-            <div class="box-content border-1 h-50 rounded-xl bg-slate-300">
-              <div
-                class="grid grid-cols-4 grid-rows-6 items-stretch h-full p-2"
-              >
-                <!-- Pantalla -->
-                <div
-                  class="col-span-4 row-span-2 box-content border-1 rounded-lg"
-                  id="screen-select"
-                >
-                  <div class="flex justify-center items-center h-full">
-                    <span id="panel" class="panel">Selecciona un producto...</span>
-                  </div>
-                </div>
-                <!-- Botones -->
-                <div></div>
-                <div class="row-start-4 grid items-stretch">
-                  <button class="button-select rounded-tl-lg">A</button>
-                </div>
-                <div class="row-start-4 grid items-stretch">
-                  <button class="button-select">B</button>
-                </div>
-                <div class="row-start-4 grid items-stretch">
-                  <button class="button-select">C</button>
-                </div>
-                <div class="row-start-4 grid items-stretch">
-                  <button class="button-select rounded-tr-lg">D</button>
-                </div>
-                <div class="row-start-5 grid items-stretch">
-                  <button class="button-select rounded-bl-lg">1</button>
-                </div>
-                <div class="row-start-5 grid items-stretch">
-                  <button class="button-select">2</button>
-                </div>
-                <div class="row-start-5 grid items-stretch">
-                  <button class="button-select">3</button>
-                </div>
-                <div class="row-start-5 grid items-stretch">
-                  <button class="button-select rounded-br-lg">4</button>
-                </div>
-                <div class="row-start-7 col-start-2 col-end-4 grid items-stretch">
-                  <button id="buy" class="button-buy rounded">Comprar</button>
-                </div>
+        </div>
+
+        <!-- LOGO -->
+        <div class="col-span-2 col-start-5 row-span-4 row-start-1">
+          <img src="assets/img/logo.png" alt="">
+        </div>
+
+        <!-- PANTALLA -->
+        <div class="card col-span-2 col-start-5 row-span-2 row-start-4">
+          pantalla
+        </div>
+
+        <!-- BOTONES -->
+        <div class="card col-span-2 col-start-5 row-span-4 row-start-6">
+          botones
+        </div>
+
+        <!-- INSERT COINS -->
+        <div class="rounded-xl flex items-center justify-center bg-[#7ABDCE] col-span-2 col-start-5 row-span-1 py-7 row-start-10 rounded-none">
+          <div class="px-20 py-2 border border-[#A7E5EF] rounded-xl bg-[#22566C]">
             
-              </div>
-            </div>
           </div>
         </div>
-
-        <div class="grid grid-cols-3 gap-4">
-          <div class="box-content border-1 col-span-2 rounded-md bg-">
-            <button class="btn-96 size-full"><span>Push</span></button>
-          </div>
-
-          <!-- Coins -->
-          <div class="grid place-items-center">
-            <button id="insertCoin">
-            <div
-              
-              class="cursor-pointer loader border-r-2 rounded-full border-yellow-500 bg-yellow-300 animate-bounce aspect-square w-8 flex justify-center items-center text-yellow-700"
-            >
-              $
-            </div>
-          </button>
-            <p id="coins"></p>
-          </div>
-        </div>
+        
       </div>
+      <div class="absolute w-56 h-48 bg- blur-[50px] -left-1/2 -top-1/2"></div>
+    </div>
+
+
     </div>
   </body>
   <script src="main.js"></script>

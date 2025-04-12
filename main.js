@@ -45,41 +45,49 @@ function insertarMoneda() {
 
 insertCoin.addEventListener('click', insertarMoneda)
  
-let letraSeleccionada = null
-let numeroSeleccionado = null
+let letraSeleccionada = null;
+let numeroSeleccionado = null;
+let productoSeleccionado = null;
 
 document.querySelectorAll('.button-select').forEach(button => {
-    button.addEventListener('click', () => {
-      const valor = button.innerText;
-  
-      if (['A', 'B', 'C', 'D'].includes(valor)) {
-        letraSeleccionada = valor;
-      } else if (['1', '2', '3', '4'].includes(valor)) {
-        numeroSeleccionado = valor;
-      }
-  
-      // Si ya hay letra y número seleccionados:
-      if (letraSeleccionada && numeroSeleccionado) {
-        let producto = letraSeleccionada + numeroSeleccionado;
-        let precio = valorProductos[producto];
-        document.querySelector('#panel').textContent = `Seleccionaste ${producto}. Precio: ${precio} coins.`;
-      
-        document.querySelector('#buy').addEventListener('click', () => {
-            if (coins >= precio) {
-                coins -= precio;
-                document.querySelector('#coins').innerText = coins;
-                document.querySelector('#panel').innerText = `Compraste ${producto}. Te quedan ${coins} coins.`;
-            } else {
-                document.querySelector('#panel').innerText = `No tienes suficientes coins para comprar ${producto}.`;
-            }
-        });
-     
-        // Reiniciar selección
+  button.addEventListener('click', () => {
+    const valor = button.innerText;
 
-      
-        letraSeleccionada = null;
-        numeroSeleccionado = null;
-      }
-    });
+    if (['A', 'B', 'C', 'D'].includes(valor)) {
+      letraSeleccionada = valor;
+    } else if (['1', '2', '3', '4'].includes(valor)) {
+      numeroSeleccionado = valor;
+    }
+
+    if (letraSeleccionada && numeroSeleccionado) {
+      productoSeleccionado = letraSeleccionada + numeroSeleccionado;
+      const precio = valorProductos[productoSeleccionado];
+      document.querySelector('#panel').textContent = `Seleccionaste ${productoSeleccionado}. Precio: ${precio} coins.`;
+
+      // Reiniciar selección para siguiente intento
+      letraSeleccionada = null;
+      numeroSeleccionado = null;
+    }
+  });
 });
-  
+
+// Agregar el listener SOLO UNA VEZ
+document.querySelector('#buy').addEventListener('click', () => {
+  if (!productoSeleccionado) {
+    document.querySelector('#panel').innerText = "Por favor selecciona un producto antes de comprar.";
+    return;
+  }
+
+  const precio = valorProductos[productoSeleccionado];
+
+  if (coins >= precio) {
+    coins -= precio;
+    document.querySelector('#coins').innerText = coins;
+    document.querySelector('#panel').innerText = `Compraste ${productoSeleccionado}. Te quedan ${coins} coins.`;
+  } else {
+    document.querySelector('#panel').innerText = `No tienes suficientes coins para comprar ${productoSeleccionado}.`;
+  }
+
+  // Limpiar selección después de comprar
+  productoSeleccionado = null;
+});
