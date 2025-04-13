@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <title>Vending Machine</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -27,42 +28,41 @@
         <div class="card col-span-4 col-start-1 row-span-9 row-end-10">
           <div class="h-full p-5  grid grid-cols-3 grid-rows-3 gap-4">
             <div class="products-img flex-col ">
-              <img class=" " src="assets/img/mani.svg" alt="">
+              <img src="assets/img/mani.svg" alt="">
               <button class="rounded-full mt-2 border border-white bg-white text-black mx-4 flex items-center flex-row"><div class="coin-img"></div> 100</button>
             </div>
             <div class="products-img flex-col ">
-              <img class=" " src="assets/img/mani.svg" alt="">
+              <img src="assets/img/nachos.svg" alt="">
               <button class="rounded-full mt-2 border border-white bg-white text-black mx-4 flex items-center flex-row"><div class="coin-img"></div> 100</button>
             </div>
             <div class="products-img flex-col ">
-              <img class=" " src="assets/img/mani.svg" alt="">
+              <img src="assets/img/strawberry.svg" alt="">
               <button class="rounded-full mt-2 border border-white bg-white text-black mx-4 flex items-center flex-row"><div class="coin-img"></div> 100</button>
             </div>
             <div class="products-img flex-col ">
-              <img class=" " src="assets/img/mani.svg" alt="">
+              <img src="assets/img/pretzel.svg" alt="">
               <button class="rounded-full mt-2 border border-white bg-white text-black mx-4 flex items-center flex-row"><div class="coin-img"></div> 100</button>
             </div>
             <div class="products-img flex-col ">
-              <img class=" " src="assets/img/mani.svg" alt="">
+              <img src="assets/img/cookies.svg" alt="">
               <button class="rounded-full mt-2  border border-white bg-white text-black mx-4 flex items-center flex-row"><div class="coin-img"></div> 100</button>
             </div>
             <div class="products-img flex-col ">
-              <img class=" " src="assets/img/mani.svg" alt="">
+              <img src="assets/img/chocolate.svg" alt="">
               <button class="rounded-full mt-2 border border-white bg-white text-black mx-4 flex items-center flex-row"><div class="coin-img"></div> 100</button>
             </div>
             <div class="products-img flex-col ">
-              <img class=" " src="assets/img/mani.svg" alt="">
+              <img src="assets/img/coke.svg" alt="">
               <button class="rounded-full mt-2 border border-white bg-white text-black mx-4 flex items-center flex-row"><div class="coin-img"></div> 100</button>
             </div>
             <div class="products-img flex-col ">
-              <img class=" " src="assets/img/mani.svg" alt="">
+              <img src="assets/img/coke.svg" alt="">
               <button class="rounded-full mt-2 border border-white bg-white text-black mx-4 flex items-center flex-row"><div class="coin-img"></div> 100</button>
             </div>
             <div class="products-img flex-col ">
-              <img class=" " src="assets/img/mani.svg" alt="">
+              <img src="assets/img/coke.svg" alt="">
               <button class="rounded-full mt-2 border border-white bg-white text-black mx-4 flex items-center flex-row"><div class="coin-img"></div> 100</button>
             </div>
-          
           </div>
         </div>
         <!-- PUSH -->
@@ -80,13 +80,48 @@
         </div>
 
         <!-- PANTALLA -->
-        <div class="card col-span-2 col-start-5 row-span-2 row-start-4">
-          pantalla
+        <div class="col-span-2 col-start-5  row-span-2 row-start-4 relative flex justify-center items-center drop-shadow-xl overflow-hidden rounded-xl border border-3 border-[#AADAE5] bg-[#EDF6F8]">
+            <p class="text-[#22576A] text-center font-mono">Inserta una moneda para comprar.</p>
         </div>
 
         <!-- BOTONES -->
-        <div class="card col-span-2 col-start-5 row-span-4 row-start-6">
-          botones
+        <div class="bg-[#E1F5FB] border border-2 border-[#AEDBE8] rounded-lg col-span-2 col-start-5 row-span-3 row-start-6">
+          <div class="h-full grid grid-cols-3 grid-rows-2 gap-3 p-4">
+            <button class="cursor-pointer transition-all bg-[#EFFCFD] text-[#22566C] font-bold rounded-lg
+            border-blue-200
+            border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
+            active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">A</button>
+            <button class="cursor-pointer transition-all bg-[#EFFCFD] text-[#22566C] font-bold rounded-lg
+            border-blue-200
+            border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
+            active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">B</button>
+            <button class="cursor-pointer transition-all bg-[#EFFCFD] text-[#22566C] font-bold rounded-lg
+            border-blue-200
+            border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
+            active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">C</button>
+            <button class="cursor-pointer transition-all bg-[#EFFCFD] text-[#22566C] font-bold rounded-lg
+            border-blue-200
+            border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
+            active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">1</button>
+            <button class="cursor-pointer transition-all bg-[#EFFCFD] text-[#22566C] font-bold rounded-lg
+            border-blue-200
+            border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
+            active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">2</button>
+            <button class="cursor-pointer transition-all bg-[#EFFCFD] text-[#22566C] font-bold rounded-lg
+            border-blue-200
+            border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
+            active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">3</button>
+          </div>
+        </div>
+
+        <div class="col-start-5 flex justify-center col-span-2 row-start-9">
+          <button class="cursor-pointer transition-all bg-[#41B88A] text-white px-12 py-2 rounded-lg
+            border-green-900
+            border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
+            active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Comprar
+          </button>
         </div>
 
         <!-- INSERT COINS -->
