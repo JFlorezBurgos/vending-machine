@@ -14,7 +14,7 @@
     >
       <!-- Titulo -->
       <div class="py-5">
-        <h1 class="not-italic text-4xl font-semibold">VENDING MACHINE</h1>
+        <h1 class="not-italic text-4xl font-semibold text-[#22566C]">VENDING MACHINE</h1>
       </div>
       <!-- maquina -->
       <div
@@ -26,42 +26,42 @@
 
        <!-- Container productos -->
         <div class="card col-span-4 col-start-1 row-span-9 row-end-10">
-          <div class="h-full p-5  grid grid-cols-3 grid-rows-3 gap-4">
+          <div class="h-full p-5  grid grid-cols-3 grid-rows-3 gap-4" id="products">
             <div class="products-img flex-col ">
               <img src="assets/img/mani.svg" alt="">
-              <button class="rounded-full mt-2 border border-white bg-white text-black mx-4 flex items-center flex-row"><div class="coin-img"></div> 100</button>
+              <button class="rounded-full mt-2 border border-white bg-white text-black mx-4 flex items-center flex-row"><div class="coin-img"></div><span>100</span></button>
             </div>
             <div class="products-img flex-col ">
               <img src="assets/img/nachos.svg" alt="">
-              <button class="rounded-full mt-2 border border-white bg-white text-black mx-4 flex items-center flex-row"><div class="coin-img"></div> 100</button>
+              <button class="rounded-full mt-2 border border-white bg-white text-black mx-4 flex items-center flex-row"><div class="coin-img"></div> <span>100</span></button>
             </div>
             <div class="products-img flex-col ">
               <img src="assets/img/strawberry.svg" alt="">
-              <button class="rounded-full mt-2 border border-white bg-white text-black mx-4 flex items-center flex-row"><div class="coin-img"></div> 100</button>
+              <button class="rounded-full mt-2 border border-white bg-white text-black mx-4 flex items-center flex-row"><div class="coin-img"></div> <span>100</span></button>
             </div>
             <div class="products-img flex-col ">
               <img src="assets/img/pretzel.svg" alt="">
-              <button class="rounded-full mt-2 border border-white bg-white text-black mx-4 flex items-center flex-row"><div class="coin-img"></div> 100</button>
+              <button class="rounded-full mt-2 border border-white bg-white text-black mx-4 flex items-center flex-row"><div class="coin-img"></div> <span>100</span></button>
             </div>
             <div class="products-img flex-col ">
               <img src="assets/img/cookies.svg" alt="">
-              <button class="rounded-full mt-2  border border-white bg-white text-black mx-4 flex items-center flex-row"><div class="coin-img"></div> 100</button>
+              <button class="rounded-full mt-2  border border-white bg-white text-black mx-4 flex items-center flex-row"><div class="coin-img"></div> <span>100</span></button>
             </div>
             <div class="products-img flex-col ">
               <img src="assets/img/chocolate.svg" alt="">
-              <button class="rounded-full mt-2 border border-white bg-white text-black mx-4 flex items-center flex-row"><div class="coin-img"></div> 100</button>
+              <button class="rounded-full mt-2 border border-white bg-white text-black mx-4 flex items-center flex-row"><div class="coin-img"></div> <span>100</span></button>
             </div>
             <div class="products-img flex-col ">
               <img src="assets/img/coke.svg" alt="">
-              <button class="rounded-full mt-2 border border-white bg-white text-black mx-4 flex items-center flex-row"><div class="coin-img"></div> 100</button>
+              <button class="rounded-full mt-2 border border-white bg-white text-black mx-4 flex items-center flex-row"><div class="coin-img"></div> <span>100</span></button>
             </div>
             <div class="products-img flex-col ">
               <img src="assets/img/coke.svg" alt="">
-              <button class="rounded-full mt-2 border border-white bg-white text-black mx-4 flex items-center flex-row"><div class="coin-img"></div> 100</button>
+              <button class="rounded-full mt-2 border border-white bg-white text-black mx-4 flex items-center flex-row"><div class="coin-img"></div> <span>100</span></button>
             </div>
             <div class="products-img flex-col ">
               <img src="assets/img/coke.svg" alt="">
-              <button class="rounded-full mt-2 border border-white bg-white text-black mx-4 flex items-center flex-row"><div class="coin-img"></div> 100</button>
+              <button class="rounded-full mt-2 border border-white bg-white text-black mx-4 flex items-center flex-row"><div class="coin-img"></div> <span>100</span></button>
             </div>
           </div>
         </div>
@@ -81,33 +81,33 @@
 
         <!-- PANTALLA -->
         <div class="col-span-2 col-start-5  row-span-2 row-start-4 relative flex justify-center items-center drop-shadow-xl overflow-hidden rounded-xl border border-3 border-[#AADAE5] bg-[#EDF6F8]">
-            <p class="text-[#22576A] text-center font-mono">Inserta una moneda para comprar.</p>
+            <p class="text-[#22576A] text-center font-mono" id="panel">Inserta una moneda para comprar.</p>
         </div>
 
         <!-- BOTONES -->
         <div class="bg-[#E1F5FB] border border-2 border-[#AEDBE8] rounded-lg col-span-2 col-start-5 row-span-3 row-start-6">
           <div class="h-full grid grid-cols-3 grid-rows-2 gap-3 p-4">
-            <button class="cursor-pointer transition-all bg-[#EFFCFD] text-[#22566C] font-bold rounded-lg
+            <button class="button-select cursor-pointer transition-all bg-[#EFFCFD] text-[#22566C] font-bold rounded-lg
             border-blue-200
             border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
             active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">A</button>
-            <button class="cursor-pointer transition-all bg-[#EFFCFD] text-[#22566C] font-bold rounded-lg
+            <button class="button-select cursor-pointer transition-all bg-[#EFFCFD] text-[#22566C] font-bold rounded-lg
             border-blue-200
             border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
             active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">B</button>
-            <button class="cursor-pointer transition-all bg-[#EFFCFD] text-[#22566C] font-bold rounded-lg
+            <button class="button-select cursor-pointer transition-all bg-[#EFFCFD] text-[#22566C] font-bold rounded-lg
             border-blue-200
             border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
             active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">C</button>
-            <button class="cursor-pointer transition-all bg-[#EFFCFD] text-[#22566C] font-bold rounded-lg
+            <button class="button-select cursor-pointer transition-all bg-[#EFFCFD] text-[#22566C] font-bold rounded-lg
             border-blue-200
             border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
             active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">1</button>
-            <button class="cursor-pointer transition-all bg-[#EFFCFD] text-[#22566C] font-bold rounded-lg
+            <button class="button-select cursor-pointer transition-all bg-[#EFFCFD] text-[#22566C] font-bold rounded-lg
             border-blue-200
             border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
             active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">2</button>
-            <button class="cursor-pointer transition-all bg-[#EFFCFD] text-[#22566C] font-bold rounded-lg
+            <button class="button-select cursor-pointer transition-all bg-[#EFFCFD] text-[#22566C] font-bold rounded-lg
             border-blue-200
             border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
             active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">3</button>
@@ -115,7 +115,7 @@
         </div>
 
         <div class="col-start-5 flex justify-center col-span-2 row-start-9">
-          <button class="cursor-pointer transition-all bg-[#41B88A] text-white px-12 py-2 rounded-lg
+          <button id="buy" class="cursor-pointer transition-all bg-[#41B88A] text-white px-12 py-2 rounded-lg
             border-green-900
             border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
             active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
@@ -126,11 +126,13 @@
 
         <!-- INSERT COINS -->
         <div class="rounded-xl flex items-center justify-center bg-[#7ABDCE] col-span-2 col-start-5 row-span-1 py-7 row-start-10 rounded-none">
-          <div class="px-20 py-2 border border-[#A7E5EF] rounded-xl bg-[#22566C]">
+          <div class="cursor-pointer px-20 py-2 border border-[#A7E5EF] rounded-xl bg-[#22566C]" id="insertCoin">
             
           </div>
         </div>
-        
+        <div class="col-start-5 col-span-2 row-start-11 flex justify-center text-[#22576A] font-bold">
+          <p class="">Saldo: <span id="coins"></span></p>
+        </div>
       </div>
       <div class="absolute w-56 h-48 bg- blur-[50px] -left-1/2 -top-1/2"></div>
     </div>

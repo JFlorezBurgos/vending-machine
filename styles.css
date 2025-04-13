@@ -29,3 +29,33 @@ background: linear-gradient(124deg, rgba(22, 98, 128, 1) 0%, rgba(58, 115, 139, 
   width: 40px;
   height: 40px;
 }
+
+@keyframes bounce-short {
+  0% { transform: translateY(0); }
+  30% { transform: translateY(-10px); }
+  60% { transform: translateY(0); }
+  100% { transform: translateY(-4px); }
+}
+
+.bounce {
+  animation: bounce-short 0.4s ease;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(100px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(120px);
+    opacity: 0;
+  }
+}
+
+.fall {
+  animation: fall 0.7s ease-in forwards;
+}
