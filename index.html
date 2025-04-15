@@ -5,174 +5,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <title>Vending Machine</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div
-      class="flex flex-col justify-centers items-center w-screen h-screen mb-2"
+      class="flex items-center flex-col mb-2"
     >
       <!-- Titulo -->
       <div class="py-5">
-        <button class="button-title" data-text="Awesome">
-          <span class="actual-text">&nbsp;Vending&nbsp;Machine&nbsp;</span>
-          <span aria-hidden="true" class="hover-text"
-            >&nbsp;Vending&nbsp;Machine&nbsp;</span
-          >
-        </button>
+        <h1 class="not-italic text-4xl font-semibold text-[#22566C]">VENDING MACHINE</h1>
       </div>
       <!-- maquina -->
       <div
-        class="box-content size-150 border-1 p-10 grid grid-row-2 gap-4 rounded-xl"
-        id="vending-machine"
+      class="relative drop-shadow-xl w-170 h-190 overflow-hidden rounded-xl  bg-[#DDF4F9]"
       >
-        <div class="grid grid-cols-3 gap-4">
-          <!-- container productos -->
-          <div class="col-span-2 row-span-3">
-            <div class="box-content border-2 h-full rounded-xl bg-slate-300">
-              <div class="grid grid-cols-4 gap-4 place-items-center" id="products">
-                <div class="place-items-center grid">
-                  <img src="assets/img/snack.png" alt="" />
-                  <span>100$</span>
-                </div>
-                <div class="place-items-center grid">
-                  <img src="assets/img/snack.png" alt="" />
-                  <span>100$</span>
-                </div>
-                <div class="place-items-center grid">
-                  <img src="assets/img/snack.png" alt="" />
-                  <span>100$</span>
-                </div>
-                <div class="place-items-center grid">
-                  <img src="assets/img/snack.png" alt="" />
-                  <span>100$</span>
-                </div>
-                <div class="place-items-center grid">
-                  <img src="assets/img/snack.png" alt="" />
-                  <span>100$</span>
-                </div>
-                <div class="place-items-center grid">
-                  <img src="assets/img/snack.png" alt="" />
-                  <span>100$</span>
-                </div>
-                <div class="place-items-center grid">
-                  <img src="assets/img/snack.png" alt="" />
-                  <span>100$</span>
-                </div>
-                <div class="place-items-center grid">
-                  <img src="assets/img/snack.png" alt="" />
-                  <span>100$</span>
-                </div>
-                <div class="place-items-center grid">
-                  <img src="assets/img/snack.png" alt="" />
-                  <span>100$</span>
-                </div>
-                <div class="place-items-center grid">
-                  <img src="assets/img/snack.png" alt="" />
-                  <span>100$</span>
-                </div>
-                <div class="place-items-center grid">
-                  <img src="assets/img/snack.png" alt="" />
-                  <span>100$</span>
-                </div>
-                <div class="place-items-center grid">
-                  <img src="assets/img/snack.png" alt="" />
-                  <span>100$</span>
-                </div>
-                <div class="place-items-center grid">
-                  <img src="assets/img/cocacola.png" alt="" />
-                  <span>100$</span>
-                </div>
-                <div class="place-items-center grid">
-                  <img src="assets/img/cocacola.png" alt="" />
-                  <span>100$</span>
-                </div>
-                <div class="place-items-center grid">
-                  <img src="assets/img/cocacola.png" alt="" />
-                  <span>100$</span>
-                </div>
-                <div class="place-items-center grid">
-                  <img src="assets/img/cocacola.png" alt="" />
-                  <span>100$</span>
-                </div>
-                
-              </div>
+      <div
+        class="absolute grid grid-cols-6 grid-rows-11 p-6 gap-4 text-white z-[1] m-3 opacity-90 rounded-xl inset-0.5 bg-[#C8ECF4]"
+      >
+
+       <!-- Container productos -->
+        <div class="card col-span-4 col-start-1 row-span-9 row-end-10">
+          <div class="h-full p-5  grid grid-cols-3 grid-rows-3 gap-4" id="products">
+            <div class="products-img flex-col ">
+              <img src="assets/img/mani.svg" alt="">
+              <button class="rounded-full mt-2 border border-white bg-white text-black mx-4 flex items-center flex-row"><div class="coin-img"></div><span>100</span></button>
             </div>
-          </div>
-          <!-- container logo -->
-          <div class="col-start-3 row-end-2">
-            <div class="">
-              <img class="h-full" src="/assets/img/logo.png" alt="" />
+            <div class="products-img flex-col ">
+              <img src="assets/img/nachos.svg" alt="">
+              <button class="rounded-full mt-2 border border-white bg-white text-black mx-4 flex items-center flex-row"><div class="coin-img"></div> <span>100</span></button>
             </div>
-          </div>
-          <!-- container seleccionar -->
-          <div class="col-start-3 row-end-3">
-            <div class="box-content border-1 h-50 rounded-xl bg-slate-300">
-              <div
-                class="grid grid-cols-4 grid-rows-6 items-stretch h-full p-2"
-              >
-                <!-- Pantalla -->
-                <div
-                  class="col-span-4 row-span-2 box-content border-1 rounded-lg"
-                  id="screen-select"
-                >
-                  <div class="flex justify-center items-center h-full">
-                    <span id="panel" class="panel">Selecciona un producto...</span>
-                  </div>
-                </div>
-                <!-- Botones -->
-                <div></div>
-                <div class="row-start-4 grid items-stretch">
-                  <button class="button-select rounded-tl-lg">A</button>
-                </div>
-                <div class="row-start-4 grid items-stretch">
-                  <button class="button-select">B</button>
-                </div>
-                <div class="row-start-4 grid items-stretch">
-                  <button class="button-select">C</button>
-                </div>
-                <div class="row-start-4 grid items-stretch">
-                  <button class="button-select rounded-tr-lg">D</button>
-                </div>
-                <div class="row-start-5 grid items-stretch">
-                  <button class="button-select rounded-bl-lg">1</button>
-                </div>
-                <div class="row-start-5 grid items-stretch">
-                  <button class="button-select">2</button>
-                </div>
-                <div class="row-start-5 grid items-stretch">
-                  <button class="button-select">3</button>
-                </div>
-                <div class="row-start-5 grid items-stretch">
-                  <button class="button-select rounded-br-lg">4</button>
-                </div>
-                <div class="row-start-7 col-start-2 col-end-4 grid items-stretch">
-                  <button id="buy" class="button-buy rounded">Comprar</button>
-                </div>
-            
-              </div>
+            <div class="products-img flex-col ">
+              <img src="assets/img/strawberry.svg" alt="">
+              <button class="rounded-full mt-2 border border-white bg-white text-black mx-4 flex items-center flex-row"><div class="coin-img"></div> <span>100</span></button>
+            </div>
+            <div class="products-img flex-col ">
+              <img src="assets/img/pretzel.svg" alt="">
+              <button class="rounded-full mt-2 border border-white bg-white text-black mx-4 flex items-center flex-row"><div class="coin-img"></div> <span>100</span></button>
+            </div>
+            <div class="products-img flex-col ">
+              <img src="assets/img/cookies.svg" alt="">
+              <button class="rounded-full mt-2  border border-white bg-white text-black mx-4 flex items-center flex-row"><div class="coin-img"></div> <span>100</span></button>
+            </div>
+            <div class="products-img flex-col ">
+              <img src="assets/img/chocolate.svg" alt="">
+              <button class="rounded-full mt-2 border border-white bg-white text-black mx-4 flex items-center flex-row"><div class="coin-img"></div> <span>100</span></button>
+            </div>
+            <div class="products-img flex-col ">
+              <img src="assets/img/coke.svg" alt="">
+              <button class="rounded-full mt-2 border border-white bg-white text-black mx-4 flex items-center flex-row"><div class="coin-img"></div> <span>100</span></button>
+            </div>
+            <div class="products-img flex-col ">
+              <img src="assets/img/coke.svg" alt="">
+              <button class="rounded-full mt-2 border border-white bg-white text-black mx-4 flex items-center flex-row"><div class="coin-img"></div> <span>100</span></button>
+            </div>
+            <div class="products-img flex-col ">
+              <img src="assets/img/coke.svg" alt="">
+              <button class="rounded-full mt-2 border border-white bg-white text-black mx-4 flex items-center flex-row"><div class="coin-img"></div> <span>100</span></button>
             </div>
           </div>
         </div>
-
-        <div class="grid grid-cols-3 gap-4">
-          <div class="box-content border-1 col-span-2 rounded-md bg-">
-            <button class="btn-96 size-full"><span>Push</span></button>
+        <!-- PUSH -->
+        <div class=" col-span-4 col-start-1 row-span-2 relative drop-shadow-xl overflow-hidden rounded-xl border border-[#AADDEA] bg-[#B4E2EE]">
+          <div
+        class="absolute flex justify-center items-center gap-4 text-white z-[1] m-3 opacity-90 rounded-xl inset-0.5 border border-[#AADDEA] bg-[#F6F8F9]"
+          >
+          <p class="text-[#22576A] font-bold text-2xl">PICK UP HERE</p>
           </div>
+        </div>
 
-          <!-- Coins -->
-          <div class="grid place-items-center">
-            <button id="insertCoin">
-            <div
-              
-              class="cursor-pointer loader border-r-2 rounded-full border-yellow-500 bg-yellow-300 animate-bounce aspect-square w-8 flex justify-center items-center text-yellow-700"
-            >
-              $
-            </div>
+        <!-- LOGO -->
+        <div class="col-span-2 col-start-5 row-span-4 row-start-1">
+          <img src="assets/img/logo.png" alt="">
+        </div>
+
+        <!-- PANTALLA -->
+        <div class="col-span-2 col-start-5  row-span-2 row-start-4 relative flex justify-center items-center drop-shadow-xl overflow-hidden rounded-xl border border-3 border-[#AADAE5] bg-[#EDF6F8]">
+            <p class="text-[#22576A] text-center font-mono" id="panel">Inserta una moneda para comprar.</p>
+        </div>
+
+        <!-- BOTONES -->
+        <div class="bg-[#E1F5FB] border border-2 border-[#AEDBE8] rounded-lg col-span-2 col-start-5 row-span-3 row-start-6">
+          <div class="h-full grid grid-cols-3 grid-rows-2 gap-3 p-4">
+            <button class="button-select cursor-pointer transition-all bg-[#EFFCFD] text-[#22566C] font-bold rounded-lg
+            border-blue-200
+            border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
+            active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">A</button>
+            <button class="button-select cursor-pointer transition-all bg-[#EFFCFD] text-[#22566C] font-bold rounded-lg
+            border-blue-200
+            border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
+            active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">B</button>
+            <button class="button-select cursor-pointer transition-all bg-[#EFFCFD] text-[#22566C] font-bold rounded-lg
+            border-blue-200
+            border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
+            active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">C</button>
+            <button class="button-select cursor-pointer transition-all bg-[#EFFCFD] text-[#22566C] font-bold rounded-lg
+            border-blue-200
+            border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
+            active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">1</button>
+            <button class="button-select cursor-pointer transition-all bg-[#EFFCFD] text-[#22566C] font-bold rounded-lg
+            border-blue-200
+            border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
+            active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">2</button>
+            <button class="button-select cursor-pointer transition-all bg-[#EFFCFD] text-[#22566C] font-bold rounded-lg
+            border-blue-200
+            border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
+            active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">3</button>
+          </div>
+        </div>
+
+        <div class="col-start-5 flex justify-center col-span-2 row-start-9">
+          <button id="buy" class="cursor-pointer transition-all bg-[#41B88A] text-white px-12 py-2 rounded-lg
+            border-green-900
+            border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
+            active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Comprar
           </button>
-            <p id="coins"></p>
+        </div>
+
+        <!-- INSERT COINS -->
+        <div class="rounded-xl flex items-center justify-center bg-[#7ABDCE] col-span-2 col-start-5 row-span-1 py-7 row-start-10 rounded-none">
+          <div class="cursor-pointer px-20 py-2 border border-[#A7E5EF] rounded-xl bg-[#22566C]" id="insertCoin">
+            
           </div>
+        </div>
+        <div class="col-start-5 col-span-2 row-start-11 flex justify-center text-[#22576A] font-bold">
+          <p class="">Saldo: <span id="coins"></span></p>
         </div>
       </div>
+      <div class="absolute w-56 h-48 bg- blur-[50px] -left-1/2 -top-1/2"></div>
+    </div>
+
+
     </div>
   </body>
   <script src="main.js"></script>
