@@ -8,7 +8,7 @@ const valorProductos = {
   B3: 500,
   C1: 900,
   C2: 900,
-  C3: 50000,
+  C3: 900,
 };
 
 // Variables globales
