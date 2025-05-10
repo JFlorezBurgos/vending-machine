@@ -1,3 +1,4 @@
+import './styles/styles.css'
 // Valores de los productos
 const valorProductos = {
   A1: 250,
@@ -47,7 +48,7 @@ panel.innerText = coins === 0 ? "Inserta una moneda para comprar." : "Selecciona
 
 // Función para insertar moneda
 function insertarMoneda() {
-  const audio = new Audio('assets/sound/coin-insert.mp3');
+  const audio = new Audio('/assets/sound/coin-insert.mp3');
   audio.play();
   coins = 50000;
   localStorage.setItem('coins', coins);
