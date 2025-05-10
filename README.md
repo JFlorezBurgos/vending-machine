@@ -12,7 +12,7 @@ A simple and interactive vending machine simulation built with HTML, CSS, and Ja
 
 ## Demo
 
-![Vending Machine Demo](assets/img/logo.png)
+[Vending Machine JG](https://vendingmachine-jg.netlify.app/)
 
 ## How to Run
 
