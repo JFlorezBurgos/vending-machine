@@ -32,18 +32,6 @@ A simple and interactive vending machine simulation built with HTML, CSS, and Ja
    npm run dev
    ```
 
-## Project Structure
-
-vending-machine/
-├── [index.html](http://_vscodecontentref_/0)       # Main HTML file
-├── [main.js](http://_vscodecontentref_/1)          # JavaScript logic for vending machine
-├── [styles.css](http://_vscodecontentref_/2)       # Styling for the application
-├── assets/          # Assets folder
-│   ├── img/         # Images for products and UI
-│   └── sound/       # Sound effects
-├── [package.json](http://_vscodecontentref_/3)     # Project configuration
-└── [README.md](http://_vscodecontentref_/4)        # Project documentation
-
 How to Use
 Insert coins by clicking the "Insert Coin" button.
 Select a product by clicking the buttons corresponding to the product code (e.g., A1, B2).
